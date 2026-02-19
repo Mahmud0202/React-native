@@ -1,11 +1,21 @@
-import { Text, View } from "react-native";
+import { StyleSheet, Text } from "react-native";
 
-export default function Greeting({ name }) {
+type Greeting = {
+  name: string;
+  role: string;
+};
+
+export default function Greeting({ name, role }: Greeting) {
   return (
-    <View>
-      <Text style={{ fontSize: 22, fontWeight: "bold" }}>
-        Привет, {name} 👋
-      </Text>
-    </View>
+    <Text>
+      Hello {name} ({role})
+    </Text>
   );
 }
+
+const styles = StyleSheet.create({
+  text: {
+    fontSize: 16,
+    marginVertical: 10,
+  },
+});
