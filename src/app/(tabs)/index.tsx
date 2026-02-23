@@ -64,10 +64,10 @@ export default function HomeScreen() {
   };
 
   return (
-    <LinearGradient colors={["#FFF5F8", "#FFE6F0"]} style={styles.container}>
+    <LinearGradient colors={["#6c7680", "#a8dbdb"]} style={styles.container}>
       <Animated.View style={{ opacity: fade, alignItems: "center" }}>
         <Image
-          source={require("../assets/myphoto.jpg")}
+          source={require("../../assets/images/myphoto.jpeg")}
           style={[styles.avatar, { transform: [{ scale: pulse }] }]}
         />
 
